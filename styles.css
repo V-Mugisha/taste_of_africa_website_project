@@ -11,7 +11,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   background-color: var(--color-cream);
   color: var(--color-dark);
 }
@@ -22,6 +22,56 @@ h3 {
   font-family: "Cormorant Upright", serif;
   font-weight: 600;
   color: var(--color-brown);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-brown);
+}
+
+.logo {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  color: var(--color-cream);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: var(--color-yellow);
+  border-bottom-color: var(--color-yellow);
+}
+
+.nav-list a.active {
+  color: var(--color-yellow);
+  border-bottom-color: var(--color-yellow);
+}
+
+main {
+  padding: 2rem;
 }
 
 button {
