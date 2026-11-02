@@ -1,0 +1,41 @@
+:root {
+  --color-yellow: #e9a23b;
+  --color-red: #a83232;
+  --color-brown: #5a3d2b;
+  --color-cream: #faf3e7;
+  --color-dark: #2b1f16;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  color: var(--color-brown);
+}
+
+button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-red);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-brown);
+}
