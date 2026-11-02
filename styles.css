@@ -74,6 +74,51 @@ main {
   padding: 2rem;
 }
 
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-image: url("https://plus.unsplash.com/premium_photo-1695297516698-fd7a320a55e5?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  background-color: rgba(43, 31, 22, 0.65);
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  max-width: 720px;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+}
+
+.hero p {
+  color: var(--color-cream);
+  margin: 0 0 1.5rem;
+}
+
+mark {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+  padding: 0 0.2rem;
+}
+
+.hero-video iframe {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 0.5rem;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
