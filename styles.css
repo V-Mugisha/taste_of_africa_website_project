@@ -195,6 +195,49 @@ mark {
   text-decoration: underline;
 }
 
+.regions {
+  text-align: center;
+}
+
+.regions h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.region-card {
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.region-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.region-card p {
+  margin: 0 0 1rem;
+  color: var(--color-brown);
+}
+
+.region-card a {
+  color: var(--color-red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.region-card a:hover {
+  text-decoration: underline;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
