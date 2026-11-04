@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Us</h1>
+      <p>Celebrating the heritage, stories, and flavours of African cuisine.</p>
+    </section>
+
+    <article class="about-page">
+      <section class="about-mission">
+        <h2>Our Mission</h2>
+        <p>
+          We are on a mission to promote African food heritage, celebrating the
+          continent's diverse cuisines, sharing authentic recipes, and telling
+          the stories behind every dish. We believe food is one of the most
+          powerful ways to understand a culture and bring people together.
+        </p>
+      </section>
+
+      <section class="about-history">
+        <h2>History of African Cuisine</h2>
+        <p>
+          African cuisine is among the oldest and most influential in the world,
+          rooted in ancient grains such as <mark>sorghum</mark>,
+          <mark>millet</mark>, and <mark>teff</mark>. Over centuries, trade,
+          migration, and agriculture have shaped a rich patchwork of regional
+          traditions, from the spice routes of North Africa to the Swahili
+          coast's blend of African, Arab, and Indian flavours.
+        </p>
+      </section>
+
+      <section class="about-influence">
+        <h2>Global Influence</h2>
+        <p>
+          Africa's culinary influence reaches far beyond the continent. The
+          Atlantic slave trade carried okra, black-eyed peas, and yams to the
+          Americas, giving rise to dishes such as <mark>gumbo</mark> and Hoppin'
+          John, while ingredients like coffee and watermelon trace their roots
+          to African soil. Today, chefs around the world are rediscovering
+          these flavours with fresh appreciation.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

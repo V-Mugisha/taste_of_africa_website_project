@@ -573,6 +573,21 @@ mark {
   border-radius: 0.75rem;
 }
 
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-page section {
+  margin-bottom: 2rem;
+}
+
+.about-page h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
