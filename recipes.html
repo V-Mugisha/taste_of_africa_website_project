@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Our Recipes</h1>
+      <p>Explore signature dishes from across the continent, and filter by region.</p>
+    </section>
+
+    <section class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="west-africa">West Africa</button>
+        <button class="filter-btn" data-filter="east-africa">East Africa</button>
+        <button class="filter-btn" data-filter="north-africa">North Africa</button>
+        <button class="filter-btn" data-filter="southern-africa">Southern Africa</button>
+      </div>
+
+      <div class="recipe-grid">
+        <article class="recipe-card" data-region="west-africa">
+          <img
+            src="https://images.unsplash.com/photo-1570275239925-4af0aa93a0dc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Jollof Rice"
+            loading="lazy" />
+          <h2>Jollof Rice</h2>
+          <p>A smoky, tomato-rich one-pot rice dish loved across West Africa.</p>
+          <a href="recipes/jollof-rice.html">View recipe</a>
+        </article>
+
+        <article class="recipe-card" data-region="north-africa">
+          <img
+            src="https://images.unsplash.com/photo-1661083098412-054431ab7112?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Moroccan Tagine"
+            loading="lazy" />
+          <h2>Moroccan Tagine</h2>
+          <p>A slow-cooked North African stew of tender meat, spices, and dried fruit.</p>
+          <a href="recipes/tagine.html">View recipe</a>
+        </article>
+
+        <article class="recipe-card" data-region="east-africa">
+          <img
+            src="https://images.unsplash.com/photo-1785516058937-b8e60d032ddd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Injera"
+            loading="lazy" />
+          <h2>Injera</h2>
+          <p>A spongy, sour flatbread from Ethiopia, served with richly spiced stews.</p>
+          <a href="recipes/injera.html">View recipe</a>
+        </article>
+
+        <article class="recipe-card" data-region="southern-africa">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1695293743884-0fc9d206ad14?q=80&w=1127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Bunny Chow"
+            loading="lazy" />
+          <h2>Bunny Chow</h2>
+          <p>A South African street-food classic of a hollowed loaf filled with curry.</p>
+          <a href="recipes/bunny-chow.html">View recipe</a>
+        </article>
+
+        <article class="recipe-card" data-region="east-africa">
+          <img
+            src="https://scontent.fkgl4-2.fna.fbcdn.net/v/t1.6435-9/97220622_617901122158956_4943830923352211456_n.jpg?stp=dst-jpg_tt6&cstp=mx616x462&ctp=s616x462&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PkVfZFxK0b4Q7kNvwHaLv2U&_nc_oc=AdqWtrZzZgZtob-Oaj0zMzXSVW-fNXQ4DRB7L5AC1aHIUeZdAg4wqcpukOrTl7o40bcLiFMWskmxKUQXiM1KRzXf&_nc_zt=23&_nc_ht=scontent.fkgl4-2.fna&_nc_gid=1XMagdiWkEcXdRT8gtB94w&_nc_ss=7b289&oh=00_AQT9NStTQ37mxP64z8HAlbpH2sViXdj6255k_cu6xhmgRQ&oe=6B13CB78"
+            alt="Isombe"
+            loading="lazy" />
+          <h2>Isombe</h2>
+          <p>A hearty East African stew of pounded cassava leaves simmered in peanut sauce.</p>
+          <a href="recipes/isombe.html">View recipe</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
