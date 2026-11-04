@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jollof Rice | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recipes.html" class="active">Recipes</a></li>
+        <li><a href="../regions.html">Regions</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="recipe">
+      <header class="recipe-header">
+        <h1>Jollof Rice</h1>
+        <p class="recipe-region">West Africa</p>
+        <button class="fav-btn" data-id="jollof-rice">❤️ Favorite</button>
+      </header>
+
+      <img
+        class="recipe-image"
+        src="https://images.unsplash.com/photo-1570275239925-4af0aa93a0dc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+        alt="Jollof Rice" />
+
+      <section class="recipe-description">
+        <h2>About This Dish</h2>
+        <p>
+          Jollof rice is a beloved West African one-pot dish of rice simmered in
+          a rich tomato and pepper sauce. A source of friendly rivalry between
+          Nigeria and Ghana, it is the centrepiece of parties and celebrations
+          across the region.
+        </p>
+      </section>
+
+      <section class="recipe-ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>2 cups long-grain parboiled rice</li>
+          <li>4 large tomatoes</li>
+          <li>2 red bell peppers</li>
+          <li>1 scotch bonnet pepper</li>
+          <li>1 onion</li>
+          <li>1/2 cup tomato paste</li>
+          <li>1/2 cup vegetable oil</li>
+          <li>2 teaspoons curry powder</li>
+          <li>1 teaspoon thyme</li>
+          <li>2 cups chicken or vegetable stock</li>
+          <li>Salt and seasoning to taste</li>
+        </ul>
+      </section>
+
+      <section class="recipe-instructions">
+        <h2>Instructions</h2>
+        <details>
+          <summary>Show step-by-step instructions</summary>
+          <ol>
+            <li>Blend the tomatoes, bell peppers, scotch bonnet, and half the onion into a smooth purée.</li>
+            <li>Heat the oil in a pot and fry the remaining diced onion until golden.</li>
+            <li>Add the tomato paste and fry for 2–3 minutes.</li>
+            <li>Pour in the pepper purée and cook until the sauce thickens and the oil separates.</li>
+            <li>Add the curry powder, thyme, and seasoning; stir well.</li>
+            <li>Pour in the stock and bring to a boil.</li>
+            <li>Add the washed rice, reduce the heat, cover, and simmer until the rice is tender.</li>
+            <li>Fluff with a fork and serve hot.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="recipe-video">
+        <h2>Watch &amp; Learn</h2>
+        <iframe
+          src="https://www.youtube.com/embed/EfZEArZcfAY"
+          title="Jollof Rice tutorial"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+
+      <section class="recipe-nutrition">
+        <h2>Nutrition Facts</h2>
+        <table>
+          <thead>
+            <tr><th>Nutrient</th><th>Per Serving</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>380 kcal</td></tr>
+            <tr><td>Protein</td><td>8 g</td></tr>
+            <tr><td>Carbohydrates</td><td>55 g</td></tr>
+            <tr><td>Fat</td><td>14 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="recipe-map">
+        <h2>Country of Origin</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Lagos,Nigeria&output=embed"
+          title="Map of Nigeria"
+          loading="lazy"></iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

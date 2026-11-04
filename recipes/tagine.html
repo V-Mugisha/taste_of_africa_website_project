@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moroccan Tagine | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recipes.html" class="active">Recipes</a></li>
+        <li><a href="../regions.html">Regions</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="recipe">
+      <header class="recipe-header">
+        <h1>Moroccan Tagine</h1>
+        <p class="recipe-region">North Africa</p>
+        <button class="fav-btn" data-id="tagine">❤️ Favorite</button>
+      </header>
+
+      <img
+        class="recipe-image"
+        src="https://images.unsplash.com/photo-1661083098412-054431ab7112?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+        alt="Moroccan Tagine" />
+
+      <section class="recipe-description">
+        <h2>About This Dish</h2>
+        <p>
+          A tagine is both a conical clay cooking vessel and the slow-cooked
+          stew made in it. Fragrant with spices, dried fruit, and tender meat,
+          it is a cornerstone of Moroccan hospitality.
+        </p>
+      </section>
+
+      <section class="recipe-ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>500 g chicken or lamb</li>
+          <li>1 onion, sliced</li>
+          <li>2 garlic cloves, minced</li>
+          <li>1 teaspoon ground ginger</li>
+          <li>1 teaspoon cumin</li>
+          <li>1 teaspoon cinnamon</li>
+          <li>A pinch of saffron</li>
+          <li>1/2 cup dried apricots</li>
+          <li>1/2 cup green olives</li>
+          <li>1 preserved lemon</li>
+          <li>2 tablespoons olive oil</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+      </section>
+
+      <section class="recipe-instructions">
+        <h2>Instructions</h2>
+        <details>
+          <summary>Show step-by-step instructions</summary>
+          <ol>
+            <li>Heat the olive oil in the tagine base and brown the meat on all sides.</li>
+            <li>Add the onion and garlic, cooking until soft.</li>
+            <li>Stir in the spices and cook until fragrant.</li>
+            <li>Add enough water to cover, then simmer gently.</li>
+            <li>Add the dried apricots, olives, and preserved lemon.</li>
+            <li>Cover and cook on low heat until the meat is tender.</li>
+            <li>Serve with warm bread or couscous.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="recipe-video">
+        <h2>Watch &amp; Learn</h2>
+        <iframe
+          src="https://www.youtube.com/embed/Sh5-l-xRZMA"
+          title="Moroccan Tagine tutorial"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+
+      <section class="recipe-nutrition">
+        <h2>Nutrition Facts</h2>
+        <table>
+          <thead>
+            <tr><th>Nutrient</th><th>Per Serving</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>420 kcal</td></tr>
+            <tr><td>Protein</td><td>30 g</td></tr>
+            <tr><td>Carbohydrates</td><td>22 g</td></tr>
+            <tr><td>Fat</td><td>24 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="recipe-map">
+        <h2>Country of Origin</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Marrakech,Morocco&output=embed"
+          title="Map of Morocco"
+          loading="lazy"></iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isombe | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recipes.html" class="active">Recipes</a></li>
+        <li><a href="../regions.html">Regions</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="recipe">
+      <header class="recipe-header">
+        <h1>Isombe</h1>
+        <p class="recipe-region">East Africa</p>
+        <button class="fav-btn" data-id="isombe">❤️ Favorite</button>
+      </header>
+
+      <img
+        class="recipe-image"
+        src="https://scontent.fkgl4-2.fna.fbcdn.net/v/t1.6435-9/97220622_617901122158956_4943830923352211456_n.jpg?stp=dst-jpg_tt6&cstp=mx616x462&ctp=s616x462&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PkVfZFxK0b4Q7kNvwHaLv2U&_nc_oc=AdqWtrZzZgZtob-Oaj0zMzXSVW-fNXQ4DRB7L5AC1aHIUeZdAg4wqcpukOrTl7o40bcLiFMWskmxKUQXiM1KRzXf&_nc_zt=23&_nc_ht=scontent.fkgl4-2.fna&_nc_gid=1XMagdiWkEcXdRT8gtB94w&_nc_ss=7b289&oh=00_AQT9NStTQ37mxP64z8HAlbpH2sViXdj6255k_cu6xhmgRQ&oe=6B13CB78"
+        alt="Isombe" />
+
+      <section class="recipe-description">
+        <h2>About This Dish</h2>
+        <p>
+          Isombe is a hearty stew of pounded cassava leaves simmered with
+          groundnuts. Popular in Rwanda, Burundi, and the DRC, it is rich,
+          earthy, and deeply comforting.
+        </p>
+      </section>
+
+      <section class="recipe-ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>500 g cassava leaves, pounded</li>
+          <li>1 cup groundnut (peanut) paste</li>
+          <li>2 onions, chopped</li>
+          <li>2 garlic cloves, minced</li>
+          <li>2 tablespoons palm oil</li>
+          <li>1 eggplant, diced (optional)</li>
+          <li>Salt to taste</li>
+        </ul>
+      </section>
+
+      <section class="recipe-instructions">
+        <h2>Instructions</h2>
+        <details>
+          <summary>Show step-by-step instructions</summary>
+          <ol>
+            <li>Heat the oil and sauté the onions and garlic until soft.</li>
+            <li>Add the pounded cassava leaves and stir well.</li>
+            <li>Mix the groundnut paste with water and pour it in.</li>
+            <li>Add the eggplant if using, and season with salt.</li>
+            <li>Simmer gently, stirring, until thick and cooked through.</li>
+            <li>Serve with rice, plantains, or ugali.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="recipe-video">
+        <h2>Watch &amp; Learn</h2>
+        <iframe
+          src="https://www.youtube.com/embed/eFt-j42yaRY"
+          title="Isombe tutorial"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+
+      <section class="recipe-nutrition">
+        <h2>Nutrition Facts</h2>
+        <table>
+          <thead>
+            <tr><th>Nutrient</th><th>Per Serving</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Calories</td><td>290 kcal</td></tr>
+            <tr><td>Protein</td><td>10 g</td></tr>
+            <tr><td>Carbohydrates</td><td>18 g</td></tr>
+            <tr><td>Fat</td><td>22 g</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="recipe-map">
+        <h2>Country of Origin</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Kigali,Rwanda&output=embed"
+          title="Map of Rwanda"
+          loading="lazy"></iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

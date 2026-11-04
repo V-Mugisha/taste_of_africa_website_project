@@ -401,6 +401,118 @@ mark {
   text-decoration: underline;
 }
 
+.recipe {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.recipe-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recipe-header h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin: 0 0 0.5rem;
+}
+
+.recipe-region {
+  color: var(--color-red);
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.fav-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--color-red);
+  border-radius: 999px;
+  background-color: transparent;
+  color: var(--color-red);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fav-btn:hover,
+.fav-btn.favorited {
+  background-color: var(--color-red);
+  color: #ffffff;
+}
+
+.recipe-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.recipe section {
+  margin-bottom: 2rem;
+}
+
+.recipe h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
+.recipe-ingredients ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.recipe-instructions summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+.recipe-instructions ol {
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+.recipe-video iframe {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.recipe-nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-nutrition th,
+.recipe-nutrition td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.recipe-nutrition th {
+  background-color: var(--color-brown);
+  color: #ffffff;
+  font-family: "Cormorant Upright", serif;
+  font-size: 1.1rem;
+}
+
+.recipe-map iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 320px;
+  border: none;
+  border-radius: 0.75rem;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
