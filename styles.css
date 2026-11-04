@@ -529,6 +529,50 @@ mark {
   background-color: var(--color-red);
 }
 
+.region-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.region-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.region-header h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin: 0 0 0.5rem;
+}
+
+.region-header p {
+  color: var(--color-red);
+  font-weight: 600;
+  margin: 0;
+}
+
+.region-page section {
+  margin-bottom: 2rem;
+}
+
+.region-page h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
+.region-page ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.region-video iframe {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 0.75rem;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;

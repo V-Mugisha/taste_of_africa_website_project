@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>North Africa | Tastes of Africa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">Tastes of Africa</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recipes.html">Recipes</a></li>
+        <li><a href="../regions.html" class="active">Regions</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="region-page">
+      <a class="back-btn" href="../regions.html">Back to Regions</a>
+      <header class="region-header">
+        <h1>North Africa</h1>
+        <p>Fragrant, spiced, and slow-cooked.</p>
+      </header>
+
+      <section class="region-intro">
+        <h2>Food Culture</h2>
+        <p>
+          North African cuisine blends Mediterranean, Arab, and Berber
+          traditions, defined by fragrant spices, olives, and slow-cooked
+          dishes that bring families together around a shared table.
+        </p>
+      </section>
+
+      <section class="region-staples">
+        <h2>Staples</h2>
+        <ul>
+          <li>Couscous</li>
+          <li>Wheat bread</li>
+          <li>Olives and dates</li>
+          <li>Lamb</li>
+          <li>Chickpeas</li>
+          <li>Preserved lemons</li>
+        </ul>
+      </section>
+
+      <section class="region-techniques">
+        <h2>Cooking Techniques</h2>
+        <p>
+          Dishes are defined by <mark>slow braising</mark> in clay tagines and
+          by complex spice blends such as <mark>ras el hanout</mark>, balanced
+          with the bright tang of <mark>preserved lemons</mark>.
+        </p>
+      </section>
+
+      <section class="region-dishes">
+        <h2>Signature Dishes</h2>
+        <ul>
+          <li><a href="../recipes/tagine.html">Moroccan Tagine</a></li>
+          <li>Couscous</li>
+          <li>Harira soup</li>
+        </ul>
+      </section>
+
+      <section class="region-video">
+        <h2>Watch &amp; Learn</h2>
+        <iframe
+          src="https://www.youtube.com/embed/593bjRDhvzw"
+          title="African cuisine introduction"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for new recipes and food stories from across Africa.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Your email address"
+            required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
