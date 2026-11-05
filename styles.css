@@ -676,3 +676,49 @@ button {
 button:hover {
   background-color: var(--color-brown);
 }
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .recipe,
+  .region-page,
+  .about-page {
+    padding: 1rem;
+  }
+
+  .featured-grid,
+  .region-grid,
+  .trends-list,
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-map iframe,
+  .about-map iframe {
+    height: 240px;
+  }
+}
