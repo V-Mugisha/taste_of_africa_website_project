@@ -132,6 +132,10 @@ mark {
   padding: 0 0.2rem;
 }
 
+.hero-video {
+  margin-top: 1.5rem;
+}
+
 .hero-video iframe {
   width: 100%;
   max-width: 560px;
@@ -586,6 +590,14 @@ mark {
 .about-page h2 {
   font-size: 1.75rem;
   margin: 0 0 1rem;
+}
+
+.about-map iframe {
+  width: 100%;
+  max-width: 640px;
+  height: 320px;
+  border: none;
+  border-radius: 0.75rem;
 }
 
 .contact {
