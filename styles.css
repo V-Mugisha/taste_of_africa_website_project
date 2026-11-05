@@ -588,6 +588,67 @@ mark {
   margin: 0 0 1rem;
 }
 
+.contact {
+  max-width: 640px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: var(--color-dark);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--color-yellow);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(233, 162, 59, 0.4);
+}
+
+.form-feedback {
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.form-feedback.error {
+  color: var(--color-red);
+}
+
+.form-feedback.success {
+  color: #2e7d32;
+}
+
+.contact-success {
+  text-align: center;
+}
+
+.contact-success h2 {
+  color: #2e7d32;
+}
+
+.hidden {
+  display: none;
+}
+
 button {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
