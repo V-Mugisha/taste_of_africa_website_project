@@ -42,5 +42,70 @@ function initContactForm() {
   });
 }
 
+function initRecipeFilter() {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const recipeCards = document.querySelectorAll(".recipe-card");
+  if (filterButtons.length === 0 || recipeCards.length === 0) return;
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      recipeCards.forEach((card) => {
+        const region = card.dataset.region;
+        const shouldShow = filter === "all" || region === filter;
+        card.classList.toggle("hidden", !shouldShow);
+      });
+    });
+  });
+}
+
+function initFavorites() {
+  const favButtons = document.querySelectorAll(".fav-btn");
+  if (favButtons.length === 0) return;
+
+  const STORAGE_KEY = "taste-of-africa-favorites";
+
+  const getFavorites = () => {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    } catch (error) {
+      return [];
+    }
+  };
+
+  const saveFavorites = (favorites) => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));
+  };
+
+  favButtons.forEach((button) => {
+    const recipeId = button.dataset.id;
+
+    if (getFavorites().includes(recipeId)) {
+      button.classList.add("favorited");
+    }
+
+    button.addEventListener("click", () => {
+      const favorites = getFavorites();
+      const index = favorites.indexOf(recipeId);
+
+      if (index === -1) {
+        favorites.push(recipeId);
+        button.classList.add("favorited");
+      } else {
+        favorites.splice(index, 1);
+        button.classList.remove("favorited");
+      }
+
+      saveFavorites(favorites);
+    });
+  });
+}
+
 initNewsletter();
 initContactForm();
+initRecipeFilter();
+initFavorites();
